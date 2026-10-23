@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17231d">
+<meta name="description" content="AK Interior & Furnitures — thoughtful interiors, custom furniture, and spaces made for living. Enquire to schedule a meeting.">
+<title>AK Interior & Furnitures | Design Your Space</title>
+<style>
+:root{--ink:#17231d;--cream:#f5f1e8;--paper:#fffdf8;--olive:#7b8764;--gold:#c8a76a;--muted:#697168;--line:#deded2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:20px}.brand{font-family:Georgia,serif;font-size:22px;font-weight:bold;letter-spacing:.2px}.brand span{display:block;font:10px Arial,sans-serif;letter-spacing:3px;color:var(--muted);text-transform:uppercase}.navlinks{display:flex;gap:25px;align-items:center;font-size:14px}.navlinks a:hover{color:var(--olive)}.btn{display:inline-block;background:var(--ink);color:white;padding:13px 20px;border:1px solid var(--ink);border-radius:2px;font-size:14px;font-weight:bold;cursor:pointer;transition:.2s}.btn:hover{background:var(--olive);border-color:var(--olive)}.btn.light{background:transparent;color:var(--ink)}.btn.light:hover{color:white}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;padding:42px 0 78px}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:11px;color:var(--olive);font-weight:bold}.hero h1{font:clamp(42px,5.7vw,72px)/1.05 Georgia,serif;letter-spacing:-1.8px;margin:17px 0 20px}.hero p{color:var(--muted);max-width:470px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-art{min-height:440px;position:relative;background:#d7d0bf;overflow:hidden;border-radius:3px}.hero-art:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(23,35,29,.05),rgba(23,35,29,.35))}.room{position:absolute;inset:0;background:linear-gradient(90deg,#d6c9b4 0 56%,#b9aa93 56% 58%,#e7dfd0 58%);}.window{position:absolute;right:9%;top:8%;width:31%;height:39%;border:9px solid #f0e9dc;background:linear-gradient(90deg,#a8b6a0 49%,#e8e5d9 50%);box-shadow:0 6px 18px #6d685633}.floor{position:absolute;bottom:0;left:0;right:0;height:27%;background:repeating-linear-gradient(90deg,#a88f70 0 70px,#b49b7d 72px 74px)}.sofa{position:absolute;bottom:21%;left:13%;width:59%;height:24%;background:#7a8268;border-radius:18px 18px 7px 7px;box-shadow:0 17px 18px #383b2c33}.sofa:before{content:"";position:absolute;left:7%;right:7%;top:-19%;height:37%;background:#8e967c;border-radius:12px 12px 4px 4px}.sofa:after{content:"";position:absolute;left:7%;right:7%;bottom:-12%;height:17%;background:#4e5848}.table{position:absolute;bottom:12%;left:31%;width:35%;height:9%;background:#876847;border-radius:50%;box-shadow:0 10px 0 #624b35}.plant{position:absolute;right:8%;bottom:24%;width:14%;height:26%;background:#69785c;clip-path:polygon(45% 100%,0 0,36% 45%,30% 0,57% 48%,87% 7%,67% 100%)}.art-label{position:absolute;bottom:18px;left:20px;color:#fff;font:italic 17px Georgia,serif;z-index:1}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:22px 0;margin-bottom:82px}.stat{text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font:25px Georgia,serif}.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+section{padding:20px 0 82px}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}.section-head h2{font:clamp(32px,4vw,46px)/1.12 Georgia,serif;margin:10px 0 0}.section-head p{max-width:390px;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid #e9e4d8}.card-art{height:205px;position:relative;overflow:hidden;background:#c9c0ad}.card-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,#17231d33)}.art1{background:linear-gradient(90deg,#d8d0c2 0 60%,#a8b5a0 60%)}.art1:before{content:"";position:absolute;left:12%;bottom:13%;width:65%;height:43%;border-radius:10px;background:#8a9279;box-shadow:0 13px 0 #656e59}.art2{background:linear-gradient(0deg,#a58b6c 0 25%,#eee8db 25% 100%)}.art2:before{content:"";position:absolute;left:25%;top:18%;width:50%;height:55%;background:#8c6548;box-shadow:inset 0 0 0 8px #b18c6a}.art3{background:linear-gradient(90deg,#e6dfd1 0 50%,#c8baa4 50%)}.art3:before{content:"";position:absolute;left:18%;bottom:16%;width:62%;height:35%;background:#68745b;border-radius:8px;box-shadow:0 12px 0 #4b5544}.card-body{padding:22px}.card h3{font:24px Georgia,serif;margin:0 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center;background:#e8e4d8;padding:48px;margin-bottom:80px}.about-visual{min-height:330px;background:linear-gradient(135deg,#b6a58c,#eee5d4);position:relative;overflow:hidden}.about-visual:before{content:"";position:absolute;left:12%;right:12%;bottom:12%;height:58%;background:#7b8668;border-radius:5px;box-shadow:0 15px 0 #5a634d}.about-visual:after{content:"AK";position:absolute;top:18px;left:20px;font:italic 56px Georgia,serif;color:#ffffffbb}.about h2{font:clamp(32px,4vw,45px)/1.1 Georgia,serif;margin:12px 0}.about p{color:#596258}.ticks{padding:0;list-style:none;display:grid;gap:9px;margin:23px 0}.ticks li:before{content:"✓";color:var(--olive);font-weight:bold;margin-right:10px}
+.enquiry{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start;padding-bottom:85px}.enquiry h2{font:clamp(34px,4vw,48px)/1.1 Georgia,serif;margin:12px 0}.enquiry p{color:var(--muted)}.contactline{margin-top:22px}.contactline strong{display:block;font-size:18px}.contactline small{color:var(--muted)}form{background:var(--paper);padding:28px;border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:16px}form label{font-size:12px;font-weight:bold;display:block;margin-bottom:6px}form .full{grid-column:1/-1}input,textarea,select{width:100%;font:14px Arial,sans-serif;padding:13px 12px;border:1px solid #d7d7cb;background:#fffefa;border-radius:2px;color:var(--ink)}input:focus,textarea:focus,select:focus{outline:2px solid #aab49a;border-color:transparent}textarea{min-height:95px;resize:vertical}.form-note{font-size:12px;color:var(--muted);grid-column:1/-1;margin:0}.submit{grid-column:1/-1;width:100%;font-size:15px}
+footer{background:var(--ink);color:#f5f1e8;padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#c5c9bd}.whatsapp-float{position:fixed;right:20px;bottom:20px;background:#238b58;color:white;padding:13px 17px;border-radius:30px;box-shadow:0 5px 20px #0002;font-weight:bold;font-size:14px;z-index:10}
+@media(max-width:760px){.navlinks a:not(.btn){display:none}.hero{grid-template-columns:1fr;padding-top:20px;gap:25px}.hero-art{min-height:340px}.stats{margin-bottom:55px}.section-head{display:block}.section-head p{margin-top:14px}.cards{grid-template-columns:1fr}.card-art{height:220px}.about{grid-template-columns:1fr;padding:24px;gap:25px;margin-bottom:55px}.about-visual{min-height:240px}.enquiry{grid-template-columns:1fr;gap:25px}form{padding:20px}.foot{align-items:flex-start;flex-direction:column}}@media(max-width:430px){form{grid-template-columns:1fr}form .full,.form-note,.submit{grid-column:1}.hero h1{font-size:43px}.brand{font-size:19px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav>
+    <a class="brand" href="#home">AK Interior & Furnitures<span>Spaces with character</span></a>
+    <div class="navlinks"><a href="#services">Services</a><a href="#about">About</a><a href="#enquiry">Contact</a><a class="btn" href="#enquiry">Book a Meeting</a></div>
+  </nav>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">Interiors · Furniture · Living</div>
+    <h1>Make your space feel like <em>you.</em></h1>
+    <p>Thoughtful interior ideas and furniture solutions designed around your space, your taste, and your everyday life.</p>
+    <div class="actions"><a class="btn" href="#enquiry">Plan Your Space ↗</a><a class="btn light" href="https://wa.me/917798737194" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+  </div>
+  <div class="hero-art" role="img" aria-label="Illustration of a calm, modern living room"><div class="room"></div><div class="window"></div><div class="floor"></div><div class="sofa"></div><div class="table"></div><div class="plant"></div><div class="art-label">Comfort, crafted beautifully.</div></div>
+</section>
+<div class="wrap stats"><div class="stat"><strong>Made for You</strong><span>Personalised ideas</span></div><div class="stat"><strong>Every Detail</strong><span>Considered design</span></div><div class="stat"><strong>One Conversation</strong><span>Start with an enquiry</span></div></div>
+<section class="wrap" id="services">
+  <div class="section-head"><div><div class="eyebrow">What we do</div><h2>Bring your ideas<br>into your space.</h2></div><p>From a room refresh to furniture planning, tell us what you have in mind and let's discuss the possibilities.</p></div>
+  <div class="cards">
+    <article class="card"><div class="card-art art1"></div><div class="card-body"><h3>Interior Design</h3><p>Thoughtful room layouts, colours, finishes and details that make a space feel complete.</p></div></article>
+    <article class="card"><div class="card-art art2"></div><div class="card-body"><h3>Custom Furniture</h3><p>Furniture ideas shaped around your room, practical needs and preferred style.</p></div></article>
+    <article class="card"><div class="card-art art3"></div><div class="card-body"><h3>Home & Office</h3><p>Explore functional, welcoming spaces for everyday living and working.</p></div></article>
+  </div>
+</section>
+<section class="wrap" id="about"><div class="about"><div class="about-visual" role="img" aria-label="Stylised interior furniture illustration"></div><div><div class="eyebrow">A better space starts here</div><h2>Your vision.<br>Our next conversation.</h2><p>Every space has its own needs. Share a few details about your project, and AK Interior & Furnitures can get in touch to discuss your requirements and arrange a meeting.</p><ul class="ticks"><li>Discuss your design ideas</li><li>Share your location and project needs</li><li>Request a call or meeting</li></ul><a class="btn" href="#enquiry">Tell Us About Your Project ↗</a></div></div></section>
+<section class="wrap enquiry" id="enquiry">
+  <div><div class="eyebrow">Let's connect</div><h2>Have a project in mind?</h2><p>Fill in the enquiry form. It will open WhatsApp with your details ready to send to our team, so we can discuss a suitable time to meet.</p><div class="contactline"><small>CALL / WHATSAPP</small><strong><a href="tel:+917798737194">+91 77987 37194</a></strong></div><div class="contactline"><small>BUSINESS</small><strong>AK Interior & Furnitures</strong></div></div>
+  <form id="enquiryForm">
+    <div><label for="name">Your full name *</label><input id="name" name="name" autocomplete="name" required placeholder="Enter your name"></div>
+    <div><label for="phone">Phone number *</label><input id="phone" name="phone" autocomplete="tel" inputmode="tel" required pattern="[0-9+\s()-]{8,18}" placeholder="Your contact number"></div>
+    <div class="full"><label for="address">Project / meeting address *</label><input id="address" name="address" autocomplete="street-address" required placeholder="Area, city, or full address"></div>
+    <div><label for="service">What do you need?</label><select id="service" name="service"><option>Interior Design</option><option>Custom Furniture</option><option>Home Interior</option><option>Office Interior</option><option>Other / Not sure yet</option></select></div>
+    <div><label for="date">Preferred meeting date</label><input id="date" name="date" type="date"></div>
+    <div class="full"><label for="message">Tell us a little about your project</label><textarea id="message" name="message" placeholder="Room type, furniture, ideas, or anything else..."></textarea></div>
+    <p class="form-note">Your details are placed into a WhatsApp message. Please review and tap Send in WhatsApp to submit the enquiry.</p>
+    <button class="btn submit" type="submit">Send Enquiry on WhatsApp ↗</button>
+  </form>
+</section>
+</main>
+<footer><div class="wrap foot"><div class="brand">AK Interior & Furnitures<span style="color:#c5c9bd">Spaces with character</span></div><small>Call / WhatsApp: +91 77987 37194<br>© <span id="year"></span> AK Interior & Furnitures</small></div></footer>
+<a class="whatsapp-float" href="https://wa.me/917798737194" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">WhatsApp ↗</a>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const f = new FormData(this);
+  const date = f.get('date') || 'Not specified';
+  const message = [
+    'NEW ENQUIRY — AK Interior & Furnitures',
+    '',
+    'Name: ' + f.get('name'),
+    'Customer phone: ' + f.get('phone'),
+    'Project / meeting address: ' + f.get('address'),
+    'Service: ' + f.get('service'),
+    'Preferred meeting date: ' + date,
+    'Project details: ' + (f.get('message') || 'Not provided')
+  ].join('\n');
+  window.open('https://wa.me/917798737194?text=' + encodeURIComponent(message), '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
